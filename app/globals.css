@@ -77,3 +77,89 @@ body {
     animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 }
+
+/* Hero headline: a one-time "live rewrite" reveal — an indigo caret sweeps the
+   headline into view, the same touchpoint mark used everywhere else on the page
+   to show where the product is acting. Pure CSS so it never depends on JS. */
+@keyframes rewrite-clip {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0% 0 0);
+  }
+}
+
+@keyframes rewrite-caret-move {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes rewrite-caret-fade {
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rewrite-reveal {
+    clip-path: inset(0 100% 0 0);
+    animation: rewrite-clip 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+    will-change: clip-path;
+  }
+
+  .rewrite-caret {
+    opacity: 1;
+    animation:
+      rewrite-caret-move 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both,
+      rewrite-caret-fade 0.2s ease-out 1s both;
+  }
+}
+
+/* Scroll reveal: content settles into place as it enters the viewport, echoing
+   the product inserting a finished rewrite into the field. One-shot per element. */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.reveal.reveal-up-sm {
+  transform: translateY(16px);
+}
+
+.reveal.reveal-scale {
+  transform: translateY(20px) scale(0.96);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    transition:
+      opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.3s ease-out;
+  }
+
+  .reveal.reveal-up-sm,
+  .reveal.reveal-scale {
+    transition:
+      opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 0.3s ease-out;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,6 +1,7 @@
 import type { ComponentType } from "react";
 import { Check } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import { ChatSessionsIllustration } from "@/components/illustrations/ChatSessionsIllustration";
 import { ContextProfilesIllustration } from "@/components/illustrations/ContextProfilesIllustration";
 import { deepDives, type DeepDive } from "@/lib/content";
@@ -16,12 +17,12 @@ function DeepDiveRow({ item }: { item: DeepDive }) {
 
   return (
     <div className="grid items-center gap-12 py-16 first:pt-0 last:pb-0 lg:grid-cols-2 lg:gap-16">
-      <div className={imageFirst ? "lg:order-1" : "lg:order-2"}>
+      <Reveal variant="scale" className={imageFirst ? "lg:order-1" : "lg:order-2"}>
         <div className="rounded-2xl bg-surface p-6 sm:p-10">
           <Illustration className="mx-auto w-full max-w-[440px]" />
         </div>
-      </div>
-      <div className={imageFirst ? "lg:order-2" : "lg:order-1"}>
+      </Reveal>
+      <Reveal delayMs={120} className={imageFirst ? "lg:order-2" : "lg:order-1"}>
         <h3 className="balance text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           <span className="sr-only">{item.eyebrow}: </span>
           {item.title}
@@ -35,7 +36,7 @@ function DeepDiveRow({ item }: { item: DeepDive }) {
             </li>
           ))}
         </ul>
-      </div>
+      </Reveal>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import type { LucideIcon } from "lucide-react";
 import { History, Layers, Mic, Sliders, Target, Wand2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import { features } from "@/lib/content";
 
 const icons: Record<string, LucideIcon> = {
@@ -16,7 +17,7 @@ export function FeaturesGrid() {
   return (
     <section id="features" className="py-20 sm:py-28">
       <Container>
-        <div className="max-w-2xl">
+        <Reveal className="max-w-2xl">
           <h2 className="balance text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
             Built for real writing, not synonym-swaps.
           </h2>
@@ -24,16 +25,18 @@ export function FeaturesGrid() {
             Every mechanic here exists because pasting into ChatGPT and back has a real cost —
             here&apos;s what replaces it.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, i) => {
             const Icon = icons[feature.icon];
             const featured = i === 0;
             return (
-              <div
+              <Reveal
                 key={feature.id}
-                className={`group rounded-2xl p-7 transition-shadow duration-300 ease-out ${
+                variant="up-sm"
+                delayMs={(i % 3) * 80}
+                className={`group rounded-2xl p-7 ${
                   featured
                     ? "bg-[linear-gradient(155deg,#EEF0FF,white_65%)] ring-1 ring-brand-500/15 hover:shadow-[0_16px_36px_-16px_rgba(99,102,241,0.35)]"
                     : "bg-surface hover:shadow-[0_16px_36px_-18px_rgba(11,11,15,0.16)]"
@@ -48,7 +51,7 @@ export function FeaturesGrid() {
                 </div>
                 <h3 className="mt-5 text-lg font-semibold text-ink">{feature.title}</h3>
                 <p className="mt-2 text-muted">{feature.body}</p>
-              </div>
+              </Reveal>
             );
           })}
         </div>

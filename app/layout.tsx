@@ -63,6 +63,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
           review, the verdict, and DESIGN.md.
         */}
+        <noscript>
+          <style>{`.reveal { opacity: 1 !important; transform: none !important; }`}</style>
+        </noscript>
         {children}
       </body>
     </html>

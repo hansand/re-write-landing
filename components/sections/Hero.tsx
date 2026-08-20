@@ -12,9 +12,15 @@ export function Hero() {
       />
       <Container className="relative grid items-center gap-16 lg:grid-cols-2 lg:gap-12">
         <div className="rise-in">
-          <h1 className="balance max-w-xl text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
-            An AI writing assistant inside every input field on the web.
-          </h1>
+          <div className="relative max-w-xl">
+            <h1 className="rewrite-reveal balance text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-[3.25rem] lg:leading-[1.08]">
+              An AI writing assistant inside every input field on the web.
+            </h1>
+            <span
+              aria-hidden="true"
+              className="rewrite-caret pointer-events-none absolute inset-y-[0.05em] left-0 w-[3px] rounded-full bg-brand-500 shadow-[0_0_12px_rgba(99,102,241,0.55)]"
+            />
+          </div>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
             Stop switching to ChatGPT and pasting things back. Type or dictate a rough draft
             on any site, pick a real rewrite, and it&apos;s inserted — with your own API key,
