@@ -1,4 +1,4 @@
-export const GITHUB_URL = "https://github.com/hansand/re-write-landing";
+export const GITHUB_URL = "https://github.com/sacsand/re-write";
 
 export const product = {
   name: "AI Compose Assistant",

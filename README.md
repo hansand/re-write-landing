@@ -33,9 +33,8 @@ npm run lint    # eslint
 
 Carried over from the spec's open items — see `PRODUCT.md` for the full record:
 
-- Swap the GitHub CTA (currently `https://github.com/hansand/re-write-landing`, a
-  confirmed placeholder) for the real destination once a Chrome Web Store listing or the
-  extension's actual public repo exists.
+- Point the GitHub CTA at a Chrome Web Store listing once one goes live (it currently
+  links to the extension's real repo, `https://github.com/sacsand/re-write`).
 - Resolve the license and update the "Is this open source?" FAQ answer
   (`lib/content.ts`) — it currently ships as an explicit TBD.
 - Set a real domain and add `metadataBase` in `app/layout.tsx` once one is chosen (build

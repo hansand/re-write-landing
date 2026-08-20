@@ -37,7 +37,7 @@ Works on *any* site (not a per-site plugin), bring-your-own API key across 4 pro
 - Supported providers: OpenAI, Google Gemini, Anthropic Claude, DeepSeek — user supplies their own API key and a free-text model field; default models are each provider's cheap/fast tier.
 - No backend server: API key, settings, and history live in the browser's local storage. The only outbound network call goes to the provider the user configured, and only when a rewrite is requested.
 - No subscription or markup — user pays their chosen provider directly.
-- Chrome Web Store listing is not live yet — CTAs point at the GitHub repo instead: https://github.com/hansand/re-write-landing (placeholder — swap once a store listing or the extension's real repo is confirmed).
+- Chrome Web Store listing is not live yet — CTAs point at the GitHub repo instead: https://github.com/sacsand/re-write.
 - License is undecided — the FAQ's "is this open source?" answer ships as an explicit TBD placeholder.
 - Real domain name for the landing page is not yet decided.
 - No product screenshots or logo exist yet. Illustration is hand-built inline SVG (flat vector, indigo/violet accent, no photorealism) in place of AI-generated art, since no image-generation tool is available for this build.
