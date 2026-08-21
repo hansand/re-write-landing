@@ -3,7 +3,7 @@ type StepKind = "focus" | "dictate" | "pick" | "insert";
 function Glyph({ kind }: { kind: StepKind }) {
   const common = {
     fill: "none",
-    stroke: "#4F46E5",
+    stroke: "#792C68",
     strokeWidth: 1.75,
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
@@ -36,7 +36,7 @@ function Glyph({ kind }: { kind: StepKind }) {
           <rect x="8" y="20" width="20" height="12" rx="3" opacity="0.45" />
           <rect x="10" y="14" width="20" height="12" rx="3" opacity="0.7" />
           <rect x="12" y="8" width="20" height="12" rx="3" fill="#EEF0FF" />
-          <path d="M27 12.5l2 2 3.5-4" stroke="#6366F1" />
+          <path d="M27 12.5l2 2 3.5-4" stroke="#963681" />
         </g>
       );
     case "insert":

@@ -27,11 +27,11 @@ export function PrivacyIllustration({ className = "" }: { className?: string }) 
       <path
         d="M210 96c-15 5-27 6-27 6v26c0 21 12 34 27 40 15-6 27-19 27-40v-26s-12-1-27-6Z"
         fill="#1B1B2A"
-        stroke="#6366F1"
+        stroke="#963681"
         strokeWidth="2"
       />
-      <rect x="198" y="132" width="24" height="18" rx="4" fill="#6366F1" />
-      <path d="M202 132v-6a8 8 0 0 1 16 0v6" stroke="#818CF8" strokeWidth="2.5" fill="none" strokeLinecap="round" />
+      <rect x="198" y="132" width="24" height="18" rx="4" fill="#963681" />
+      <path d="M202 132v-6a8 8 0 0 1 16 0v6" stroke="#B4419A" strokeWidth="2.5" fill="none" strokeLinecap="round" />
       <circle cx="210" cy="140" r="2.4" fill="#0B0B0F" />
     </svg>
   );

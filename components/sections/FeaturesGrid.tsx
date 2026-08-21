@@ -38,7 +38,7 @@ export function FeaturesGrid() {
                 delayMs={(i % 3) * 80}
                 className={`group rounded-2xl p-7 ${
                   featured
-                    ? "bg-[linear-gradient(155deg,#EEF0FF,white_65%)] ring-1 ring-brand-500/15 hover:shadow-[0_16px_36px_-16px_rgba(99,102,241,0.35)]"
+                    ? "bg-[linear-gradient(155deg,#EEF0FF,white_65%)] ring-1 ring-brand-500/15 hover:shadow-[0_16px_36px_-16px_rgba(150,54,129,0.35)]"
                     : "bg-surface hover:shadow-[0_16px_36px_-18px_rgba(11,11,15,0.16)]"
                 }`}
               >

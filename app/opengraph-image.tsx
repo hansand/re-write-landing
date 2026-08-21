@@ -17,7 +17,7 @@ export default async function Image() {
           padding: "80px",
           backgroundColor: "#0B0B0F",
           backgroundImage:
-            "radial-gradient(circle at 82% 18%, rgba(99,102,241,0.55), transparent 55%)",
+            "radial-gradient(circle at 82% 18%, rgba(150,54,129,0.55), transparent 55%)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
@@ -27,7 +27,7 @@ export default async function Image() {
               width: 56,
               height: 56,
               borderRadius: 16,
-              backgroundColor: "#6366F1",
+              backgroundColor: "#963681",
               alignItems: "center",
               justifyContent: "center",
             }}

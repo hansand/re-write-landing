@@ -9,8 +9,8 @@ export function HeroIllustration({ className = "" }: { className?: string }) {
     >
       <defs>
         <linearGradient id="bubbleGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#818CF8" />
-          <stop offset="1" stopColor="#4F46E5" />
+          <stop offset="0" stopColor="#B4419A" />
+          <stop offset="1" stopColor="#792C68" />
         </linearGradient>
         <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="180%">
           <feDropShadow dx="0" dy="14" stdDeviation="18" floodColor="#0B0B0F" floodOpacity="0.12" />
@@ -50,10 +50,10 @@ export function HeroIllustration({ className = "" }: { className?: string }) {
         <rect x="300" y="146" width="264" height="196" rx="18" fill="#FFFFFF" stroke="#E7E7EE" />
         <rect x="324" y="172" width="72" height="10" rx="5" fill="#9A9AA8" />
 
-        <rect x="316" y="196" width="232" height="40" rx="12" fill="#EEF0FF" stroke="#6366F1" strokeWidth="1.5" />
-        <rect x="332" y="208" width="140" height="7" rx="3.5" fill="#4F46E5" opacity="0.7" />
-        <rect x="332" y="220" width="96" height="7" rx="3.5" fill="#4F46E5" opacity="0.45" />
-        <circle cx="524" cy="216" r="10" fill="#6366F1" />
+        <rect x="316" y="196" width="232" height="40" rx="12" fill="#EEF0FF" stroke="#963681" strokeWidth="1.5" />
+        <rect x="332" y="208" width="140" height="7" rx="3.5" fill="#792C68" opacity="0.7" />
+        <rect x="332" y="220" width="96" height="7" rx="3.5" fill="#792C68" opacity="0.45" />
+        <circle cx="524" cy="216" r="10" fill="#963681" />
         <path d="M519.5 216l3 3 6-6.5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
 
         <rect x="316" y="244" width="232" height="40" rx="12" fill="#F8F8FB" stroke="#E7E7EE" />
@@ -67,14 +67,14 @@ export function HeroIllustration({ className = "" }: { className?: string }) {
 
       {/* focused compose field */}
       <g filter="url(#cardShadow)">
-        <rect x="40" y="374" width="380" height="98" rx="18" fill="#FFFFFF" stroke="#6366F1" strokeWidth="2" />
+        <rect x="40" y="374" width="380" height="98" rx="18" fill="#FFFFFF" stroke="#963681" strokeWidth="2" />
       </g>
       <rect x="64" y="404" width="230" height="9" rx="4.5" fill="#0B0B0F" opacity="0.55" />
       <rect x="64" y="422" width="160" height="9" rx="4.5" fill="#0B0B0F" opacity="0.3" />
-      <rect x="228" y="422" width="2" height="12" fill="#6366F1" />
+      <rect x="228" y="422" width="2" height="12" fill="#963681" />
 
       {/* compose bubble */}
-      <circle cx="424" cy="378" r="36" fill="#6366F1" opacity="0.12" />
+      <circle cx="424" cy="378" r="36" fill="#963681" opacity="0.12" />
       <circle cx="424" cy="378" r="28" fill="url(#bubbleGrad)" />
       <path
         d="M424.6 366.4a.65.65 0 0 1 1.24 0l1.1 3.3a3.6 3.6 0 0 0 2.28 2.28l3.3 1.1a.65.65 0 0 1 0 1.24l-3.3 1.1a3.6 3.6 0 0 0-2.28 2.28l-1.1 3.3a.65.65 0 0 1-1.24 0l-1.1-3.3a3.6 3.6 0 0 0-2.28-2.28l-3.3-1.1a.65.65 0 0 1 0-1.24l3.3-1.1a3.6 3.6 0 0 0 2.28-2.28l1.1-3.3Z"

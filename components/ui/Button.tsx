@@ -5,7 +5,7 @@ type Variant = "primary" | "secondary" | "onDark" | "onBrand";
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-brand-600 shadow-[0_1px_2px_rgba(11,11,15,0.06)] hover:shadow-[0_8px_20px_-6px_rgba(99,102,241,0.55)]",
+    "bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-brand-600 shadow-[0_1px_2px_rgba(11,11,15,0.06)] hover:shadow-[0_8px_20px_-6px_rgba(150,54,129,0.55)]",
   secondary:
     "bg-transparent text-ink ring-1 ring-inset ring-hairline hover:ring-ink/30 hover:bg-ink/[0.03] focus-visible:outline-ink",
   onDark:

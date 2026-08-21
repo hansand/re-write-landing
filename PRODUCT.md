@@ -40,7 +40,7 @@ Works on *any* site (not a per-site plugin), bring-your-own API key across 4 pro
 - Chrome Web Store listing is not live yet — CTAs point at the GitHub repo instead: https://github.com/sacsand/re-write.
 - License is undecided — the FAQ's "is this open source?" answer ships as an explicit TBD placeholder.
 - Real domain name for the landing page is not yet decided.
-- No product screenshots or logo exist yet. Illustration is hand-built inline SVG (flat vector, indigo/violet accent, no photorealism) in place of AI-generated art, since no image-generation tool is available for this build.
+- No product screenshots or logo exist yet. Illustration is hand-built inline SVG (flat vector, plum accent, no photorealism) in place of AI-generated art, since no image-generation tool is available for this build.
 
 ## Brand Commitments
 

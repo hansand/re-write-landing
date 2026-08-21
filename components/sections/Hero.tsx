@@ -18,7 +18,7 @@ export function Hero() {
             </h1>
             <span
               aria-hidden="true"
-              className="rewrite-caret pointer-events-none absolute inset-y-[0.05em] left-0 w-[3px] rounded-full bg-brand-500 shadow-[0_0_12px_rgba(99,102,241,0.55)]"
+              className="rewrite-caret pointer-events-none absolute inset-y-[0.05em] left-0 w-[3px] rounded-full bg-brand-500 shadow-[0_0_12px_rgba(150,54,129,0.55)]"
             />
           </div>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">

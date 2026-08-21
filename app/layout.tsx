@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6366f1",
+  themeColor: "#963681",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           THESIS: One tool that lives inside every field you already use — proven by showing
           the compose bubble open mid-sentence in a real browser, not an abstract "AI beam".
           OWN-WORLD: Flat-front vector illustration (no axonometric tilt), indigo/violet
-          (#6366F1) accent on white, soft gradients, no photorealism; Geist Sans throughout,
+          (#963681) accent on white, soft gradients, no photorealism; Geist Sans throughout,
           Geist Mono only for the shortcut badge; rounded-2xl cards, flat by default, soft
           shadow only on hover.
           STORY: See the mechanism instantly -> scan the breadth of sites it works on -> walk
